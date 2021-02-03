@@ -2,9 +2,7 @@ from tkinter.messagebox import *
 from pygame.locals import *
 from random import *
 import tkinter as tk
-import pprint
 import pygame
-import os
 base = tk.Tk()
 base.geometry('0x0')
 base.resizable(False,False)
