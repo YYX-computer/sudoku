@@ -48,7 +48,7 @@ def show_sudoku(surf,sudoku,s,e):
                 t = font.render(str(sudoku[i][j]),True,color[0],color[1])
             t = pygame.transform.scale(t,(64,64))
             surf.blit(t,(64 * j,64 * i))
-            pygame.draw.rect(surf,(255,255,255),Rect((64 * j,64 * i),(64,64)),width=1)
+            pygame.draw.rect(surf,(255,255,255),Rect((64 * j,64 * i),(64,64)),1)
 def main():
     scr = pygame.display.set_mode((576,576),DOUBLEBUF)
     ans = gen_sudoku()
